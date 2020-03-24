@@ -13,7 +13,7 @@
 
     d3Script.onload = () => 
 
-    customElements.define('com-sap-teched-gauge-XX', class Gauge extends HTMLElement {
+    customElements.define('com-sap-gauge-example-50', class Gauge extends HTMLElement {
 
 
         disconnectedCallback () {
@@ -34,6 +34,7 @@
             this._shadowRoot = this.attachShadow({mode: 'open'});
             this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
             this._svgContainer;
+            
         };
     
     
